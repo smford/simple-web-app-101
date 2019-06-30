@@ -25,7 +25,7 @@ In this introduction I will step you through using some simple and free technolo
 In the IT world we often talk about environments, it is best explained in an example:
 
 - Sandbox Environment: a dirty set of servers and technology that I can play around with and test my application on without ruining other peoples work or disrupting any real users
-- Pre-production Environment: a set of servers and technologies that are identical to the production environment, to firstly test the application against other components of the systen; and secondly test performance of the application on infrastructure which represents what the end user will use
+- Pre-production Environment: a set of servers and technologies that are identical to the production environment, to firstly test the application against other components of the system; and secondly test performance of the application on infrastructure which represents what the end user will use
 - Production Environment: the actual set of servers and technology that will be used by end users of the application
 
 The names and even the number of the environments do not really matter, different employers work differently.  What is important to understand is that as the environments gets closer to production three things should occur:
