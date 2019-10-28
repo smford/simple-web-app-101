@@ -59,3 +59,21 @@ func myfirstfunction(mynewstring string) string {
 	}
 
 	```
+	- Line 2: using the Print function from the package log, display "main is starting"
+	- Line 3 - 6: if the length of the variable myname is 0, display a Fatal message and exit the application with an errorcode of 1
+	- Line 7 - 9: using the Println function from the package fmt, print out my name in lowercase and uppercase, then exit happily with the errorcode 0
+
+1. Lets compile and run the code:
+	```
+  cd simple-web-app-101/slide-02
+  go build 2.go
+  ```
+  `./2`
+  - The output should be:
+  ```
+	2019/10/28 19:35:42 starting init function
+	2019/10/28 19:35:42 main is starting
+	my name is: Boaty McBoatface
+	MY NAME IS: BOATY MCBOATFACE
+	```
+	- notice the time stamps?
