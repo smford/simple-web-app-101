@@ -142,7 +142,7 @@ func myfirstfunction(mynewstring string) string {
 	go build 1.go
 	```
 	1. Lets run the application
-	`./`
+	`./1`
 	1. The output should be:
 	```
 	starting init function
