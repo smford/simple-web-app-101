@@ -105,7 +105,7 @@ func myfirstfunction(mynewstring string) string {
  	- Line 3: closing } to indicate function ends here
     
 1.	Now lets work through the main function
-  ```
+	```
   func main() {
     fmt.Println("main is starting")
     fmt.Println("This is code for slide number:", slidenumber)
