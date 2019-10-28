@@ -27,3 +27,10 @@ This will create a container called "my-golang-app" which you will then be able 
 docker run -it my-golang-app /bin/bash
 ```
 
+OR if you want to save what you have made run the following command:
+```
+mkdir shared
+docker run -it --mount type=bind,source=$(pwd)/shared,target=/go/tutorial my-golang-app /bin/bash
+```
+
+Whenever you make
