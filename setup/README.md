@@ -16,21 +16,24 @@ Technologies used in these first two slides:
 [OSX](https://docs.docker.com/docker-for-mac/install/)
 [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
-## Download the golang image
+## Download the golang image and build the container
 ```
 docker pull golang:buster
 docker build -t my-golang-app .
 ```
 
 This will create a container called "my-golang-app" which you will then be able to run by:
-```
-docker run -it my-golang-app /bin/bash
-```
 
-OR if you want to save what you have made run the following command:
+## Start the container and get access to the tutorial code
 ```
-mkdir webapps-tutorial
-docker run -it --mount type=bind,source=$(pwd)/webapps-tutorial,target=/go/tutorial my-golang-app /bin/bash
+mkdir tutorial
+docker run -it --mount type=bind,source=$(pwd)/tutorial,target=/go/tutorial my-golang-app /bin/bash
+./download.sh
 ```
+- Line 1: makes a directory on your laptop called tutorial, this is where this tutorial will be downloaded to
+- Line 2: tells docker:
+  - to start your newly built container called my-golang-app with an interative terminal (-it)
+  - to mount the newly created tutorial directory into the cointer
+  - to start the bash shell
+- Line 3: runs the download.sh script which will download this tutorial from github
 
-Whenever you make
