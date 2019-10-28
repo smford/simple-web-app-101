@@ -29,8 +29,8 @@ docker run -it my-golang-app /bin/bash
 
 OR if you want to save what you have made run the following command:
 ```
-mkdir shared
-docker run -it --mount type=bind,source=$(pwd)/shared,target=/go/tutorial my-golang-app /bin/bash
+mkdir webapps-tutorial
+docker run -it --mount type=bind,source=$(pwd)/webapps-tutorial,target=/go/tutorial my-golang-app /bin/bash
 ```
 
 Whenever you make
