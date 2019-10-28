@@ -9,10 +9,11 @@ import (
 
 var myname string
 
+const slidenumber = "2"
+
 func init() {
 	log.Print("starting init function")
-	myname = "Boaty McBoatface"
-	//myname = ""
+	//myname = "Boaty McBoatface"
 }
 
 func main() {
