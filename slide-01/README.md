@@ -138,14 +138,14 @@ func myfirstfunction(mynewstring string) string {
 	- Create a myfirstfunction function that only runs when main or init calls it
  
 1.  Ok cool, we've got the code, lets see if it works:
-	1. We first need to compile the code, this converts it into a binary file that your computer understands and can run
+	- We first need to compile the code, this converts it into a binary file that your computer understands and can run
 	```
 	cd simple-web-app-101/slide-01
 	go build 1.go
 	```
-	1. Lets run the application
+	- Lets run the application
 	`./1`
-	1. The output should be:
+	- The output should be:
 	```
 	starting init function
 	main is starting
