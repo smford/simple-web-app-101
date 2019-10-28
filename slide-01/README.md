@@ -140,7 +140,7 @@ func myfirstfunction(mynewstring string) string {
 1.  Ok cool, we've got the code, lets see if it works:
 	- We first need to compile the code, this converts it into a binary file that your computer understands and can run
 	```
-	cd simple-web-app-101/slide-01
+	cd /go/tutorial/slide-01
 	go build 1.go
 	```
 	- Lets run the application

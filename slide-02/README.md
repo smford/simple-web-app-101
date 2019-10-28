@@ -65,7 +65,7 @@ func myfirstfunction(mynewstring string) string {
 1. Lets compile and run the code:
 		
 	```
-	cd simple-web-app-101/slide-02
+	cd /go/tutorial/slide-02
 	go build 2.go
 	`./2`
 	echo $?
@@ -89,6 +89,7 @@ func myfirstfunction(mynewstring string) string {
 	
 	Then lets compile and run the application again: 
 	```
+	cd /go/tutorial/slide-02
 	go build 2.go
 	./2
 	echo $?
