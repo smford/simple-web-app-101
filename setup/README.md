@@ -40,11 +40,11 @@ docker run -it --mount type=bind,source=$(pwd)/tutorial,target=/go/tutorial my-g
 ## Things to note
 - the container image is based upon ubuntu buster 18.10
 - golang, git, vim and other common tools are installed
-- to install more stuff use "apt-get install <app to install>"
+- to install more stuff use `apt-get install <app to install>`
 - the tutorial directory you created is shared with the docker container.  when you create a file in that directory the container will be able to access it, conversely when working in the container you just need to save a file to /go/tutorial and your laptop will be able to see it too
 
 ## Cleanup
 - To remove the container and delete the image run:
-  - docker container delete my-golang-app
-  - docker image delete golang:buster
+  - `docker container delete my-golang-app`
+  - `docker image delete golang:buster`
 
