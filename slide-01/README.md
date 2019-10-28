@@ -130,12 +130,12 @@ func myfirstfunction(mynewstring string) string {
 	- When an application runs, finishes what its doing and exits, it presents an errorcode back to the operating system.  This is useful as your operating system can tell whether the application exited happy, sad, or something in between.  When an application closes happy, it returns a code 0, when it doesn't return happy it returns another number.   Different operating systems have different meanings for the error codes, we will be exploring this in detail more in the next slide.
 
 1.  So I've explained the components of a simple go application, lets step through it again:
-	1. Import some extra packages
-	1. Setup a couple variables
-	1. Define a constant called slidenumber
-	1. Create an init function that fires when the application first runs
-	1. Create a main function that runs after init, and this is where the bulk of the application runs
-	1. Create a myfirstfunction function that only runs when main or init calls it
+	- Import some extra packages
+	- Setup a couple variables
+	- Define a constant called slidenumber
+	- Create an init function that fires when the application first runs
+	- Create a main function that runs after init, and this is where the bulk of the application runs
+	- Create a myfirstfunction function that only runs when main or init calls it
  
 1.  Ok cool, we've got the code, lets see if it works:
 	1. We first need to compile the code, this converts it into a binary file that your computer understands and can run
