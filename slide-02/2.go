@@ -12,13 +12,14 @@ var myname string
 func init() {
 	log.Print("starting init function")
 	myname = "Boaty McBoatface"
+	//myname = ""
 }
 
 func main() {
 	log.Print("main is starting")
 	if len(myname) == 0 {
 		log.Fatal("oops, name is too short! exiting")
-		os.Exit(1)
+		//os.Exit(1)
 	}
 
 	fmt.Println("my name is:", myname)

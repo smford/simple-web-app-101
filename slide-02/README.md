@@ -64,6 +64,7 @@ func myfirstfunction(mynewstring string) string {
 	- Line 7 - 9: using the Println function from the package fmt, print out my name in lowercase and uppercase, then exit happily with the errorcode 0
 
 1. Lets compile and run the code:
+		
 	```
   cd simple-web-app-101/slide-02
   go build 2.go
