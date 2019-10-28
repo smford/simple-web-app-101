@@ -32,9 +32,9 @@ docker run -it --mount type=bind,source=$(pwd)/tutorial,target=/go/tutorial my-g
 ```
 - Line 1: makes a directory on your laptop called tutorial, this is where this tutorial will be downloaded to
 - Line 2: tells docker:
-  - to start your newly built container called my-golang-app with an interative terminal (-it)
-  - to mount the newly created tutorial directory into the cointer
-  - to start the bash shell
+  - to `run` your newly built container called `my-golang-app` with an interative terminal (`-it`)
+  - to mount the newly created tutorial directory into the container under /go/tutorial `--mount type=bind,source=$(pwd)/tutorial,target=/go/tutorial`
+  - to start the bash shell `/bin/bash`
 - Line 3: runs the download.sh script which will download this tutorial from github into the tutorial directory
 
 ## Things to note
