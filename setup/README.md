@@ -16,7 +16,21 @@ Technologies used in these first two slides:
 - [OSX](https://docs.docker.com/docker-for-mac/install/)
 - [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
+## Create the docker configuration file
+- create a new empty file called `Dockerfile` and paste the following in to it:
+```
+FROM golang:buster
+
+RUN apt-get update -y
+RUN apt-get install vim -y
+RUN mkdir /go/tutorial
+RUN echo "#!/usr/bin/env bash" >> /go/download.sh
+RUN echo "git clone https://github.com/smford/simple-web-app-101.git /go/tutorial" >> /go/download.sh
+RUN chmod +x /go/download.sh
+```
+
 ## Download the golang image and build the container
+In your terminal, `cd` to the directory you created the `Dockerfile` and run the following commands:
 ```
 docker pull golang:buster
 docker build -t my-golang-app .
