@@ -51,6 +51,13 @@ As code passes a set of tests, it can then be tested on the next environment clo
  
 ### 3. Deploy
 
+Deploying a build artifact (an application) can happen many ways depending on the technology used to run the application, and the technologies used in an organisation.  Many places use specialised tools such as Jenkins, Travis, Concourse or CircleCI to deploy the application.  But you can use scripts or orchestration tools (like ansible, salt) to deploy also.
+
+Deployment is often to a sandbox environment first, then the tests run (either by hand or ideally automated), then if the tests passed succesfully deployed to a pre-production environment where a further set of tests are run.  These second set of tests are typically used to test two things - the performance of an application when used on production like infrastructure, and against the complete set of technologies that the application relies upon.  Furthermore, the performance tests will often simulate heavy load on the application to discern wether any performance related issues arise (in the application or in the infrastructure).  If it is a web application, simulations of users navigating the website and the application will occur.
+
+Once this round of testing is complete, the deployment system will either automatically deploy to production, or wait until sign off by a quality assurance person before deploying to production.
+
+We aspire to make deployments have minimal effect on users, and we aspire to have zero down time deployments.  There are various techniques and technologies that allow us to achieve it.  For example, some deployments will create a brand new production environment, then instruct a load balancer to migrate users across on to the new production environment.  Once the old environment has drained of users, it will shut the old production environment down.  The methods and technologies used to do these sorts of deployments depend heavily on the application being created in such a way to allow the deployments to succeed.  The most popular approach is called [12 Factor](https://12factor.net/).
 
 
 ---
