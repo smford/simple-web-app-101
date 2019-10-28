@@ -8,9 +8,9 @@ It is a simple application that prints out my name and your name, in lower case 
 package main
 
 import (
-	"fmt"
-	"os"
-	"strings"
+  "fmt"
+  "os"
+  "strings"
 )
 
 var (
@@ -127,7 +127,8 @@ func myfirstfunction(mynewstring string) string {
 	- Line 9: closing } to indicate function ends here
 
 1.  Whats the point of os.Exit(0)?
-	When an application runs, finishes what its doing and exits, it presents an errorcode back to the operating system.  This is useful as your operating system can tell whether the application exited happy, sad, or something in between.  When an application closes happy, it returns a code 0, when it doesn't return happy it returns another number.   Different operating systems have different meanings for the error codes, we will be exploring this in detail more in the next slide.
+
+When an application runs, finishes what its doing and exits, it presents an errorcode back to the operating system.  This is useful as your operating system can tell whether the application exited happy, sad, or something in between.  When an application closes happy, it returns a code 0, when it doesn't return happy it returns another number.   Different operating systems have different meanings for the error codes, we will be exploring this in detail more in the next slide.
 
 1.  So I've explained the components of a simple go application, lets step through it again:
 	1. Import some extra packages
