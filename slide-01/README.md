@@ -29,7 +29,7 @@ func init() {
 func main() {
   fmt.Println("main is starting")
   fmt.Println("This is code for slide number:", slidenumber)
-  fmt.Println("My name is:", myname)
+  fmt.Println("my name is:", myname)
   fmt.Println("MY NAME IS:", myfirstfunction(myname))
   fmt.Println("your name is:", yourname)
   fmt.Println("MY NAME IS:", myfirstfunction(yourname))
@@ -109,7 +109,7 @@ func myfirstfunction(mynewstring string) string {
 	func main() {
   	fmt.Println("main is starting")
   	fmt.Println("This is code for slide number:", slidenumber)
-  	fmt.Println("My name is:", myname)
+		fmt.Println("my name is:", myname)
   	fmt.Println("MY NAME IS:", myfirstfunction(myname))
   	fmt.Println("your name is:", yourname)
   	fmt.Println("MY NAME IS:", myfirstfunction(yourname))
@@ -119,7 +119,7 @@ func myfirstfunction(mynewstring string) string {
 	- Line 1: create a main function
 	- Line 2: using the fmt packages Println function, print out "main is starting"
 	- Line 3: print out "This is code for slide number: 1"
-	- Line 4: print out "My name is: Boaty McBoatface"
+	- Line 4: print out "my name is: Boaty McBoatface"
 	- Line 5: run the function myfirstfunction(myname) which makes myname into upper case and returns "BOATY MCBOATFACE", meaning we print out "MY NAME IS: BOATY MCBOATFACE"
 	- Line 6 & 7: similar to lines 4 & 5, but with yourname rather than myname
 	- Line 8: run the Exit function from the os package we imported earlier, passing it the number 0
@@ -137,4 +137,18 @@ func myfirstfunction(mynewstring string) string {
 1.  Ok cool, we've got the code, lets see if it works:
 	1. We first need to compile the code, this converts it into a binary file that your computer understands and can run
 	```
-	cd 	
+	cd simple-web-app-101/slide-01
+	go build 1.go
+	```
+	1. Lets run the application
+	`./`
+	1. The output should be:
+	```
+	starting init function
+	main is starting
+	This is code for slide number: 1
+	my name is: Boaty McBoatface
+	MY NAME IS: BOATY MCBOATFACE
+	your name is: Jane Smith
+	MY NAME IS: JANE SMITH
+	```

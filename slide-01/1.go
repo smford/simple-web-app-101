@@ -22,7 +22,7 @@ func init() {
 func main() {
 	fmt.Println("main is starting")
 	fmt.Println("This is code for slide number:", slidenumber)
-	fmt.Println("My name is:", myname)
+	fmt.Println("my name is:", myname)
 	fmt.Println("MY NAME IS:", myfirstfunction(myname))
 	fmt.Println("your name is:", yourname)
 	fmt.Println("MY NAME IS:", myfirstfunction(yourname))
