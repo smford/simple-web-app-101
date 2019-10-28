@@ -106,15 +106,15 @@ func myfirstfunction(mynewstring string) string {
     
 1.	Now lets work through the main function
 	```
-  func main() {
-    fmt.Println("main is starting")
-    fmt.Println("This is code for slide number:", slidenumber)
-    fmt.Println("my name is:", myname)
-    fmt.Println("MY NAME IS:", myfirstfunction(myname))
-    fmt.Println("your name is:", yourname)
-    fmt.Println("MY NAME IS:", myfirstfunction(yourname))
-    os.Exit(0)
-  }
+	func main() {
+		fmt.Println("main is starting")
+		fmt.Println("This is code for slide number:", slidenumber)
+		fmt.Println("my name is:", myname)
+		fmt.Println("MY NAME IS:", myfirstfunction(myname))
+		fmt.Println("your name is:", yourname)
+		fmt.Println("MY NAME IS:", myfirstfunction(yourname))
+		os.Exit(0)
+		}
 	```
 	- Line 1: create a main function
 	- Line 2: using the fmt packages Println function, print out "main is starting"
