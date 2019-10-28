@@ -82,8 +82,10 @@ func myfirstfunction(mynewstring string) string {
 	- notice the 0 at the end?  That is the errorcode returned from the application.  The command `echo $?` tells the OS to print out the last return code it recieved.
 
 1. Let us see what happens when we change a couple things.
-	Change this line: `myname = "Boaty McBoatface"`
-	To: `myname = ""`
+	- Change this line: `myname = "Boaty McBoatface"`
+	- To: `//myname = "Boaty McBoatface"`
+
+	The double / at the beginning of a line comments out the line.  By commenting out this line the variable myname will remain empty.
 	
 	Then lets compile and run the application again: 
 	```
