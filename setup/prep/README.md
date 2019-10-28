@@ -9,3 +9,5 @@ Before coming to the session please could you install Docker on to your laptop u
 - [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
 Alternatively, you can just install golang and git on to your laptop, but that will require more configuration and it has not been tested thoroughly.  We won't be able to help you much if you decide to go down this route.  The docker method is preferred as it ensures everyone has the same common environment to work with.
+
+Please also keep an eye on this page incase there are other things you need to prepare before the day.

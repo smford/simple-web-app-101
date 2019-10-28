@@ -30,7 +30,7 @@ RUN chmod +x /go/download.sh
 ```
 
 ## Download the golang image and build the container
-In your terminal, `cd` to the directory you created the `Dockerfile` and run the following commands:
+In your terminal, `cd` to the directory where you created the `Dockerfile` and run the following commands:
 ```
 docker pull golang:buster
 docker build -t my-golang-app .
