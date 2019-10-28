@@ -66,12 +66,12 @@ func myfirstfunction(mynewstring string) string {
 1. Lets compile and run the code:
 		
 	```
-  cd simple-web-app-101/slide-02
-  go build 2.go
-  ```
-  `./2`
-  - The output should be:
-  ```
+	cd simple-web-app-101/slide-02
+	go build 2.go
+	```
+	`./2`
+	- The output should be:
+	```
 	2019/10/28 19:35:42 starting init function
 	2019/10/28 19:35:42 main is starting
 	my name is: Boaty McBoatface
