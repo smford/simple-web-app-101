@@ -31,5 +31,5 @@ In this introduction I will step you through using some simple and free technolo
 1. [Slide 00: DevOps: Background to Modern Practices](https://github.com/smford/simple-web-app-101/tree/master/slide-00)
 1. [Slide 01: Structure of a golang application](https://github.com/smford/simple-web-app-101/tree/master/slide-01)
 1. [Slide 02: Changing the simple golang application](https://github.com/smford/simple-web-app-101/tree/master/slide-02)
-1. [Slide 03: Making the appication run on any application](https://github.com/smford/simple-web-app-101/tree/master/slide-03)
+1. [Slide 03: Making the appication run on any operating system](https://github.com/smford/simple-web-app-101/tree/master/slide-03)
 1. [Slide 04: Making a simple web application](https://github.com/smford/simple-web-app-101/tree/master/slide-04)
