@@ -2,11 +2,21 @@
 
 Here I will be talking about some of the basic principles of DevOps
 
-- Agile working
+- General Principles of DevOps
+- Agile Working
 - Infrastructure as Code
 - Environments
 - Pipelines
 
+## Geneal Principles of DevOps
+
+Let us assume that code can be written, the next step/problem is to ensure that code is of high quality, can actually run somewhere, be reliable and resilient,  whilst also being scalable.  In the DevOps world this is called Building, Testing and Deploying, and the flow of code through the each of these steps is called the Pipeline.
+
+Luckily most of the Build, Test and Deploy problem can be solved using cloud technologies and gluing them together.  The problem can be answered in many other different ways, with many different types of technologies, not all of which need to be cloud based.
+
+## Agile Working
+
+## Infrastructure as Code
 
 ## Environments
 
