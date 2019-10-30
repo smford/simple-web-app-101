@@ -42,14 +42,14 @@ This will create a container called "my-golang-app" which you will then be able 
 
 ** If you are using Windows, you will need to grant Docker permission to share a local drive with the container by: right click the whale icon, select settings, then GIVE FULL ACCESS TO YOUR DISK TO DOCKER!
 
-OSX/Linux:
+- OSX/Linux:
 	```
 	mkdir tutorial
 	docker run -it --mount type=bind,source=$(pwd)/tutorial,target=/go/tutorial my-golang-app /bin/bash
 	./download.sh
 	```
 
-Windows:
+- Windows:
 	```
 	mkdir tutorial
 	docker run -it --mount type=bind,source=DRIVELETTER:\tutorial,target=/go/tutorial my-golang-app /bin/bash
