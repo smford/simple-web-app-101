@@ -40,9 +40,7 @@ This will create a container called "my-golang-app" which you will then be able 
 
 ## Start the container and get access to the tutorial code
 
-** If you are using Windows, you will need to grant Docker permission to share a local drive with the container by: right click the whale icon, select settings, then GIVE FULL ACCESS TO YOUR DISK TO DOCKER!
-
-### If you are using Windows, you will need to grant Docker permission to share a local drive with the container. To do this, right click the whale icon in the traybar, select Settings, then Shared Drives, and tick the letter of the drive you want to store the tutorial files on. Since this changes the security settings for the entire drive we strongly suggest not to do this for C:, your default system drive. For best security, use a USB stick for the purpose, and click "Reset Credentials" after stopping the container.
+**Windows Users**: You will need to grant Docker permission to share a local drive with the container. To do this, right click the whale icon in the traybar, select Settings, then Shared Drives, and tick the letter of the drive you want to store the tutorial files on. Since this changes the security settings for the entire drive we strongly suggest not to do this for C:, your default system drive. For best security, use a USB stick for the purpose, and click "Reset Credentials" after stopping the container.
 
 - OSX/Linux:
 	```
