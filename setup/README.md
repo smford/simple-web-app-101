@@ -79,6 +79,7 @@ And since you have saved stuff to the /go/tutorial directory it will be saved an
 
 ## Cleanup
 - To remove the container and delete the image run:
-  - `docker container delete my-golang-app`
-  - `docker image delete golang:buster`
+  - `docker container rm my-golang-app`
+  - `docker image rm golang:buster`
+  - `docker image rm my-golang-app`
 
