@@ -1,10 +1,6 @@
-# A Simple Introduction to Writing a Simple Golang Application using DevOps principles.
+# A Simple Introduction to Writing a Simple Golang Application using DevOps Principles.
 
 Step by step instructions on creating a simple web app in golang, stored in git, that says "hello world", gets automatically tested and deployed in to the cloud for free, with distributed free logging.
-
-Let us assume that code can be written, the next step/problem is to ensure that code is of high quality, can actually run somewhere, be reliable and resilient,  whilst also being scalable.  In the DevOps world this is called Building, Testing and Deploying, and the flow of code through the each of these steps is called the Pipeline.
-
-Luckily most of the Build, Test and Deploy problem can be solved using cloud technologies and gluing them together.  The problem can be answered in many other different ways, with many different types of technologies, not all of which need to be cloud based.
 
 In this introduction I will step you through using some simple and free technologies that you can use to help understand the fundamentals of the process of getting code out to production using a common pipeline, with DevOps based methodologies. I have no particular allegiance to any technology, I use whatever tool works best in a given situation, I selected these technologies because it can all run in the cloud for free, and are relatively modern and popular technologies.
 
