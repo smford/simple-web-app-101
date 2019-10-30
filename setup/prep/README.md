@@ -5,8 +5,7 @@ We will be using docker to build and run this tutorial, this will mean you won't
 Before coming to the session please could you install Docker and download the container image on to your laptop using the below instructions, it will mean we can start on the session quickly without needing to wait for everyone to download and install it which could take a long time.
 
 
-1. Install Docker
-	You may need to setup an account on docker.com to download
+1. Install Docker - You may need to setup an account on docker.com to download
 	- [Windows](https://docs.docker.com/docker-for-windows/install/)
 	- [OSX](https://docs.docker.com/docker-for-mac/install/)
 	- [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/)

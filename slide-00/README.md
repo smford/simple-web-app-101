@@ -8,7 +8,7 @@ Here I will be talking about some of the basic principles of DevOps
 - Environments
 - Pipelines
 
-## Geneal Principles of DevOps
+## General Principles of DevOps
 
 Let us assume that code can be written, the next step/problem is to ensure that code is of high quality, can actually run somewhere, be reliable and resilient,  whilst also being scalable.  In the DevOps world this is called Building, Testing and Deploying, and the flow of code through the each of these steps is called the Pipeline.
 
