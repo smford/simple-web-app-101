@@ -7,6 +7,7 @@ In this introduction I will step you through using some simple and free technolo
 
 | Technology | Purpose | Why | Link |
 |:--|:--|:--|:--|
+| docker | containerisation tool | to run the tutorial | [docker.com](https://docker.com/) |
 | golang | programming language | to write the application | [golang.org](https://golang.org/) |
 | go dep | programming dependancy management tool | helps manage the dependancies of all the libraries your application will use | [golang/dep](https://github.com/golang/dep) | 
 | git | distributed version control system | used to manage versions of the application as we write it | [git.kernel.org](https://git.kernel.org/pub/scm/git/git.git/) | 
