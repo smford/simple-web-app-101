@@ -16,7 +16,7 @@ DevOps is a set of practices that combines software development (Dev) and inform
 
 My definition: It is a set of techniques and methods that try and bring developers and infrastructure engineers closer together.  We leverage technology, ways of working, and foster collaborative behaviours to allow these two types of workers to work more efficiently.
 
-Who case?  Well, it means as technical people we get to play with new and exciting technogies faily regularly.  As an Infrastructure person I get to meddle in code more, and developers get to learn infrastructure more.  DevOps creates a better understanding of each sides needs and desires, and that allows better work to be delivered.
+Who cares?  Well, it means as technical people we get to play with new and exciting technogies faily regularly.  As an Infrastructure person I get to meddle in code more, and developers get to learn infrastructure more.  DevOps creates a better understanding of each sides needs and desires, and that allows better work to be delivered.
 
 The primary output in the DevOps world is code.  Code makes applications, applications give competive advantage, and that means profit.
 
@@ -33,10 +33,10 @@ DevOps:
 One way of working that most teams use is called *Agile*.  This essentially involves:
 - chopping up work in to small tasks
 - working through these small tasks and regularly checking whether what we are doing is what we should be doing; and quickly pivoting when the direction changes
-- failing fast: it's a fact that not everything succeeds, so it's best to monitor progress and if it isn't working, stop and re-evaluate, and try something new early before things get off track
+- failing fast: it's a fact that not everything succeeds, so it's best to monitor progress and if it isn't working, stop and re-evaluate, and try something new early before things get too far off track
 - having regular meetings to monitor work progression and priority.  This is like keeping your finger on the pulse
-- check in on the teams health regularly.  Ask them what they aren't happy about and try to address them quickly, having someone empowered and responsible for addressing problems means the technies can focus on technical stuff, whilst someone else keeps the distractions away
-- rather than trying to complete a taski/problem perfectly on the first attempt, which almost always fails, accept that you might need to come back to a problem a number of times and polish it.  This is called iterative development, you create a simple application (called minimum viable product), then present it back to the end user, making sure it's what they want, then add a little more, and present back to the user, and repeat over and over
+- check in on the teams health regularly.  Ask them what they aren't happy about and try to address them quickly, having someone empowered and responsible for addressing problems means the techies can focus on technical stuff, whilst someone else keeps the distractions away
+- rather than trying to complete a taski/problem perfectly on the first attempt, which almost always fails, accept that you might need to come back to a problem a number of times and polish it before you get it right.  This is called iterative development, you create a simple application (called minimum viable product), then present it back to the end user, making sure it's what they want, then add a little more, and present back to the user, and repeat over and over
 
 
 ## Infrastructure as Code
@@ -59,7 +59,7 @@ The names and even the number of the environments do not really matter, differen
 
 Once code is written, it needs to be built, tested and deployed; the flow of code through the each of these steps is called the Pipeline.
 
-Luckily most of the Build, Test and Deploy problem can be solved using cloud technologies and gluing them together.
+Luckily most of the Build, Test and Deploy pipeline can use cloud technologies and gluing them together.
 
 ### 1. Build
 This can mean compiling the code in to a binary executable file, or another type of "build artifact", most of the time we will add a version to it.  Other types of build artifacts include: docker images, rpms, debs, virtual machine images, tarballs, pretty much anything
