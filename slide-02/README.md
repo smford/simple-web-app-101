@@ -67,7 +67,7 @@ func myfirstfunction(mynewstring string) string {
 	```
 	cd /go/tutorial/slide-02
 	go build 2.go
-	`./2`
+	./2
 	echo $?
 	```
 	- The output should be:
