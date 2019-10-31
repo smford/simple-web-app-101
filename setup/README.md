@@ -1,12 +1,12 @@
 # Setting up your Computer for the Tutorial
 
-We will be using docker to build and run this tutorial, this will mean you won't have to install much stuff on to your computer and you'll be able to easily remove it in time.
+We will be using docker to build and run this tutorial, this will mean you won't have to install much on to your computer.
 
-I won't be going in to using docker in much depth, instead I will be giving you the instructions on how to install it on your laptop, and the instructions of how to use docker to run stuff.
+I won't be teaching you how to use docker, instead I will be giving you the basic instructions to install and use it on your laptop.
 
-Alternatively, you can just install golang and git on to your laptop, but that will require more configuration and it has not been tested thoroughly.
+Rather than using docker, you can just install golang and git on to your laptop, but that will require more configuration and it has not been tested thoroughly.
 
-Technologies used in these first two slides:
+Technologies used in these first few slides:
 - docker
 - golang
 - git
@@ -17,7 +17,7 @@ Technologies used in these first two slides:
 - [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
 ## Create the docker configuration file
-- create a new empty file called `Dockerfile` (without a .txt or other file extention) and paste the following lines in to it:
+- create a new empty file called `Dockerfile` (without a .txt or other file extension) and paste the following lines in to it:
 ```
 FROM golang:buster
 
@@ -36,7 +36,7 @@ docker pull golang:buster
 docker build -t my-golang-app .
 ```
 
-This will create a container called "my-golang-app" which you will then be able to run by:
+This will create a container called "my-golang-app".
 
 ## Start the container and get access to the tutorial code
 
@@ -82,4 +82,3 @@ And since you have saved stuff to the /go/tutorial directory it will be saved an
   - `docker container rm my-golang-app`
   - `docker image rm golang:buster`
   - `docker image rm my-golang-app`
-
