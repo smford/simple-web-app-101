@@ -10,11 +10,34 @@ Here I will be talking about some of the basic principles of DevOps
 
 ## General Principles of DevOps
 
-Let us assume that code can be written, the next step/problem is to ensure that code is of high quality, can actually run somewhere, be reliable and resilient,  whilst also being scalable.  In the DevOps world this is called Building, Testing and Deploying, and the flow of code through the each of these steps is called the Pipeline.
+There is no clear definition of what DevOps is, it is flexible and everyone has their own opinion of it.  A good generic description is:
 
-Luckily most of the Build, Test and Deploy problem can be solved using cloud technologies and gluing them together.  The problem can be answered in many other different ways, with many different types of technologies, not all of which need to be cloud based.
+DevOps is a set of practices that combines software development (Dev) and information-technology operations (Ops) which aims to shorten the systems development life cycle and provide continuous delivery with high software quality. [source](https://en.wikipedia.org/wiki/DevOps)
+
+My definition: It is a set of techniques and methods that try and bring developers and infrastructure engineers closer together.  We leverage technology, ways of working, and foster collaborative behaviours to allow these two types of workers to work more efficiently.
+
+Who case?  Well, it means as technical people we get to play with new and exciting technogies faily regularly.  As an Infrastructure person I get to meddle in code more, and developers get to learn infrastructure more.  DevOps creates a better understanding of each sides needs and desires, and that allows better work to be delivered.
+
+The primary output in the DevOps world is code.  Code makes applications, applications give competive advantage, and that means profit.
+
+DevOps:
+- ensures code is of high quality (less bugs mean happier customers)
+- can actually run somewhere
+- be reliable (high uptime) and resilient (so it can heal itself)
+- whilst also being scalable (grow when needed)
+- and work as autonomously as possible
+
 
 ## Agile Working
+
+One way of working that most teams use is called *Agile*.  This essentially involves:
+- chopping up work in to small tasks
+- working through these small tasks and regularly checking whether what we are doing is what we should be doing; and quickly pivoting when the direction changes
+- failing fast: it's a fact that not everything succeeds, so it's best to monitor progress and if it isn't working, stop and re-evaluate, and try something new early before things get off track
+- having regular meetings to monitor work progression and priority.  This is like keeping your finger on the pulse
+- check in on the teams health regularly.  Ask them what they aren't happy about and try to address them quickly, having someone empowered and responsible for addressing problems means the technies can focus on technical stuff, whilst someone else keeps the distractions away
+- rather than trying to complete a taski/problem perfectly on the first attempt, which almost always fails, accept that you might need to come back to a problem a number of times and polish it.  This is called iterative development, you create a simple application (called minimum viable product), then present it back to the end user, making sure it's what they want, then add a little more, and present back to the user, and repeat over and over
+
 
 ## Infrastructure as Code
 
@@ -26,14 +49,17 @@ In the IT world we often talk about environments, it is best explained in an exa
 - Pre-production Environment: a set of servers and technologies that are identical to the production environment, to firstly test the application against other components of the system; and secondly test performance of the application on infrastructure which represents what the end user will use
 - Production Environment: the actual set of servers and technology that will be used by end users of the application
 
-The names and even the number of the environments do not really matter, different employers work differently.  What is important to understand is that as the environments gets closer to production three things should occur:
+The names and even the number of the environments do not really matter, different organisations work differently.  What is important to understand is that as the environments gets closer to production three things should occur:
 
 1. the cost of running the environments increases
 2. confidence that the code will run well in production increases
 3. that disruption to any environment effects more and more users
 
 ## Pipeline
-Once code is written, it needs to be built, tested and deployed.
+
+Once code is written, it needs to be built, tested and deployed; the flow of code through the each of these steps is called the Pipeline.
+
+Luckily most of the Build, Test and Deploy problem can be solved using cloud technologies and gluing them together.
 
 ### 1. Build
 This can mean compiling the code in to a binary executable file, or another type of "build artifact", most of the time we will add a version to it.  Other types of build artifacts include: docker images, rpms, debs, virtual machine images, tarballs, pretty much anything
