@@ -4,7 +4,6 @@ Here I will be talking about some of the basic principles of DevOps
 
 - General Principles of DevOps
 - Agile Working
-- Infrastructure as Code
 - Environments
 - Pipelines
 
@@ -36,10 +35,9 @@ One way of working that most teams use is called *Agile*.  This essentially invo
 - failing fast: it's a fact that not everything succeeds, so it's best to monitor progress and if it isn't working, stop and re-evaluate, and try something new early before things get too far off track
 - having regular meetings to monitor work progression and priority.  This is like keeping your finger on the pulse
 - check in on the teams health regularly.  Ask them what they aren't happy about and try to address them quickly, having someone empowered and responsible for addressing problems means the techies can focus on technical stuff, whilst someone else keeps the distractions away
-- rather than trying to complete a taski/problem perfectly on the first attempt, which almost always fails, accept that you might need to come back to a problem a number of times and polish it before you get it right.  This is called iterative development, you create a simple application (called minimum viable product), then present it back to the end user, making sure it's what they want, then add a little more, and present back to the user, and repeat over and over
+- rather than trying to complete a task/problem perfectly on the first attempt, which almost always fails, accept that you might need to come back to a problem a number of times and polish it before you get it right.  This is called iterative development, you create a simple application (called minimum viable product), then present it back to the end user, making sure it's what they want, then add a little more, and present back to the user, and repeat over and over
 
 
-## Infrastructure as Code
 
 ## Environments
 
@@ -59,7 +57,7 @@ The names and even the number of the environments do not really matter, differen
 
 Once code is written, it needs to be built, tested and deployed; the flow of code through the each of these steps is called the Pipeline.
 
-Luckily most of the Build, Test and Deploy pipeline can use cloud technologies and gluing them together.
+Luckily most of the Build, Test and Deploy pipeline can use cloud technologies and DevOps involves us gluing them together.
 
 ### 1. Build
 This can mean compiling the code in to a binary executable file, or another type of "build artifact", most of the time we will add a version to it.  Other types of build artifacts include: docker images, rpms, debs, virtual machine images, tarballs, pretty much anything
@@ -76,7 +74,7 @@ As code passes a set of tests, it can then be tested on the next environment clo
 
 Deploying a build artifact (an application) can happen many ways depending on the technology used to run the application, and the technologies used in an organisation.  Many places use specialised tools such as Jenkins, Travis, Concourse or CircleCI to deploy the application.  But you can use scripts or orchestration tools (like ansible, salt) to deploy also.
 
-Deployment is often to a sandbox environment first, then the tests run (either by hand or ideally automated), then if the tests passed succesfully deployed to a pre-production environment where a further set of tests are run.  These second set of tests are typically used to test two things - the performance of an application when used on production like infrastructure, and against the complete set of technologies that the application relies upon.  Furthermore, the performance tests will often simulate heavy load on the application to discern wether any performance related issues arise (in the application or in the infrastructure).  If it is a web application, simulations of users navigating the website and the application will occur.
+Deployment is often to a sandbox environment first, then the tests run (either by hand or ideally automated), then if the tests passed succesfully deployed to a pre-production environment where a further set of tests are run.  These second set of tests are typically used to test two things - firstly the performance of an application when used on production like infrastructure, and secondly against the complete set of technologies that the application relies upon.  Furthermore, the performance tests will often simulate heavy load on the application to discern wether any performance related issues arise (in the application or in the infrastructure).  If it is a web application, simulations of users navigating the website and the application will occur.
 
 Once this round of testing is complete, the deployment system will either automatically deploy to production, or wait until sign off by a quality assurance person before deploying to production.
 
