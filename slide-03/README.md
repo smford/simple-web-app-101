@@ -6,7 +6,7 @@ The alternative is called an [_interpreted language_](https://en.wikipedia.org/w
 
 There is also a hybrid of the two methods.
 
-What is cool about Golang is that you can easily compile a program in linux to run in windows, osx or even the raspberry pi.  You can do this with other languages, but golang has all the capability built in and it is very easy to do.  
+What is cool about Golang is that you can easily compile a program in one operating system to run on another operating system, no fuss or fluffing.  In this slide we will use linux to compile a simple application to run in linux, windows, osx and even the raspberry pi.  You can do this with other languages, but golang has all the capability built in and it is very easy to do.
 
 By default with you run the `go build` command it will compile the program for current operating system, that is what we have been doing so far.  Lets try compiling an application for another operating system.
 
@@ -16,10 +16,13 @@ cd slide-03
 
 - Linux:
 	`GOOS=linux GOARCH=amd64 go build -o something-linux something.go`
+
 - Raspberry Pi:
 	`GOOS=linux GOARCH=arm GOARM=5 go build -o something-rpi something.go`
+
 - OSX:
 	`GOOS=darwin GOARCH=amd64 go build -o something-osx something.go`
+
 - Windows:
 	`GOOS=windows GOARCH=386 go build -o something-windows.exe something.go`
 
